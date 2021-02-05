@@ -1,0 +1,25 @@
+name: Jekyll builds successfully
+
+on: [pull_request]
+
+jobs:
+  test:
+    name: Install and Build
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Ruby, Bundler, Gemfile
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.2
+          bundler-cache: true
+
+      - run:
+          "echo 'url: https://better-personal-website.github.io/personal-website' >> _config_gh.yml"
+
+      - name: Execute Doctor Command
+        run: bundle exec jekyll doctor --config _config.yml,_config_gh.yml
