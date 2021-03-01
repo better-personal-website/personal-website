@@ -2,11 +2,17 @@ layout: sidebar
 style: light
 
 # baseurl: repo-name # set this variable to your repo name if you're not hosting in your username.github.io repo
+# url: "https://example.com" # set this variable to the path to your website if it's not the default; eg https://better-personal-website.github.io/personal-website
 
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
+  - jekyll-feed
+
+# The GitHub username to use is determined from your Git remotes. If you want to override it, set it below.
+# more info here https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration
+# repository: github/personal-website
 
 permalink: /:year/:month/:day/:title/
 
@@ -58,3 +64,9 @@ topics:
   - name: Sass
     web_url: https://github.com/topics/sass
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+
+# rss feed config
+enable_rss: true # set this to false if you don't want a RSS feed
+title: My Blog
+description: Welcome to my blog!
+
