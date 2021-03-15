@@ -1,5 +1,5 @@
 layout: sidebar
-style: dark
+style: light
 
 # baseurl: repo-name # set this variable to your repo name if you're not hosting in your username.github.io repo
 # url: "https://example.com" # set this variable to the path to your website if it's not the default; eg https://better-personal-website.github.io/personal-website
@@ -36,7 +36,7 @@ projects:
     projects:
     # - repo-name
 
-social_media:
+# social_media:
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
@@ -48,8 +48,8 @@ social_media:
   # medium: your_username
   # stackoverflow: your_user_id
   # telegram: your_username
-  twitch: dylanmye
-  twitter: dylan_mye
+  # twitch: your_username
+  # twitter: your_username
   # unsplash: your_username
   # vk: your_username
   # website: http://your_website_url
